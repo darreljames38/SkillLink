@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skill Link - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="nobg.png" />
+
+<style>
+  
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('bldg.jpg') no-repeat center center/cover;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6); 
+  z-index: -1;
+}
+
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+
+.contact-wrapper {
+  background: rgba(224, 221, 221, 0.95); 
+  padding: 25px 30px;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  color: black; 
+}
+
+
+.contact-wrapper h1, .contact-wrapper h2 {
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #222;
+  text-align: center;
+}
+
+
+
+
+
+form button {
+  background: #ff4747;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-item img {
+  height: 24px;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+    <a href="index.html">
+     <img src="nobg.png" alt="Skill Link Logo" class="logo-img" />
+     Skill Link
+    </a>
+  </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+ <main class="content-container">
+ <div class="contact-wrapper">
+    <h1>Contact Us</h1>
+    <form id="contactForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <a href="https://www.facebook.com/darrel.james.551564" class="contact-item" target="_blank">
+        <img src="fb.svg" alt="Facebook" />
+        <span>Darrel James</span>
+      </a>
+      <a href="https://www.instagram.com/darr.els/" class="contact-item" target="_blank">
+        <img src="ig.svg" alt="Instagram" />
+        <span>darr.els</span>
+      </a>
+      <div class="contact-item">
+        <img src="phone.svg" alt="Phone" />
+        <span>09219347527</span>
+      </div>
+      <div class="contact-item">
+        <img src="location.svg" alt="Location" />
+        <span>Bacoor, Cavite</span>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+
+  <script src="script.js"></script>
+  <script>
+    // Simple form submission alert
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      alert('Thank you for contacting Skill Link! We will get back to you shortly.');
+      form.reset();
+    });
+  </script>
+  
+  <footer>
+  <p>© 2025 SkillLink, Inc. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

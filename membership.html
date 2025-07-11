@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Membership - Skill Link</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+   
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      flex: 1 1 300px;
+      max-width: 420px;
+    }
+
+    .card h3 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      line-height: 1.8;
+    }
+
+    .card button {
+      display: block;
+      margin: 20px auto 0;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      background-color: #0a2949;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .card.employer button {
+      background-color: #c53737d0;
+    }
+
+.button-link {
+  display: block;
+  text-align: center;
+  background-color: #0d2239;
+  color: white;
+  padding: 4px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.button-link.green {
+  background-color: #821717;
+}
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #3f0001;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="nobg.png" alt="Skill Link Logo" class="logo-img" />
+        Skill Link
+      </a>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Portfolio</a>
+      
+    </nav>
+
+  
+  </header>
+
+  <main>
+    <div class="container">
+      <h2>Skill Link Membership</h2>
+      <div class="cards">
+
+      
+        <div class="card">
+          <h3>👤 Job Seekers</h3>
+          <p>₱499/year or ₱59/month</p>
+          <ul>
+            <li>✔ Priority job listing visibility</li>
+            <li>✔ Direct messaging with employers</li>
+            <li>✔ Resume review & expert feedback</li>
+            <li>✔ Access to exclusive training/webinars</li>
+            <li>✔ Featured applicant badge</li>
+          </ul>
+          <a href="sign-in.html" class="button-link">Join as Job Seeker</a>
+        </div>
+
+        
+        <div class="card employer">
+          <h3>🏢 Employers</h3>
+          <p>₱100/month</p>
+          <ul>
+            <li>✔ Unlimited job posting</li>
+            <li>✔ Company branding in listings</li>
+            <li>✔ Featured employer badge</li>
+            <li>✔ Access to top applicants</li>
+            <li>✔ Priority support</li>
+          </ul>
+          <a href="sign-in.html" class="button-link green">Join as Employer</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 SkillLink, Inc. All rights reserved.
+  </footer>
+
+    
+</body>
+</html>

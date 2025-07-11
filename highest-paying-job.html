@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Highest Paying IT Jobs 2025</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="nobg.png" />
+  <style>
+    
+   .nav-links {
+  display: flex;
+  gap: 20px;
+  margin-left: auto; /* Push links to the right */
+  align-items: center;
+}
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .slider-container {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .job-slider {
+      display: flex;
+      transition: transform 0.4s ease-in-out;
+      width: 100%;
+    }
+
+    .job {
+      min-width: 100%;
+      padding: 30px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #ddd;
+      animation: fadeIn 1s ease;
+    }
+
+    .job h2 {
+      margin: 0 0 10px;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .job p {
+      color: #555;
+    }
+
+    .slider-buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .slider-buttons button {
+      background-color: #3f0001;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      margin: 0 5px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .slider-buttons button:hover {
+      background-color: #5a0001;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #3f0001;
+      color: white;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="nobg.png" alt="Skill Link Logo" class="logo-img" />
+        Skill Link
+      </a>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">contact</a>
+    </nav>
+
+   
+  </header>
+
+<div class="video-header">
+  <video autoplay muted loop playsinline>
+    <source src="header.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <div class="overlay-text">
+    <h1>Trusted by Professionals</h1>
+    <p>Join thousands landing high-paying IT jobs today.</p>
+  </div>
+</div>
+
+  <div class="content">
+    <h2 style="text-align:center; margin-bottom: 30px;">Top 5 Highest Paying IT Jobs of 2025</h2>
+
+    <div class="slider-container">
+      <div class="job-slider" id="jobSlider">
+        <div class="job">
+          <h2>1. AI/ML Engineer</h2>
+          <p>Average Salary: $145,000/year — Experts in machine learning and AI model development are in massive demand.</p>
+        </div>
+        <div class="job">
+          <h2>2. Cloud Solutions Architect</h2>
+          <p>Average Salary: $140,000/year — Designs scalable and secure cloud infrastructure for businesses worldwide.</p>
+        </div>
+        <div class="job">
+          <h2>3. Cybersecurity Manager</h2>
+          <p>Average Salary: $135,000/year — Protects organizations from increasing digital threats and vulnerabilities.</p>
+        </div>
+        <div class="job">
+          <h2>4. Blockchain Developer</h2>
+          <p>Average Salary: $130,000/year — Builds decentralized applications and secure digital ledgers across industries.</p>
+        </div>
+        <div class="job">
+          <h2>5. Data Scientist</h2>
+          <p>Average Salary: $125,000/year — Turns big data into valuable business insights using statistics and machine learning.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-buttons">
+      <button onclick="prevSlide()">⟵</button>
+      <button onclick="nextSlide()">⟶</button>
+    </div>
+  </div>
+
+  <section class="testimonial-section">
+  <h2>What Our Clients Say</h2>
+  <div class="testimonial-container">
+    <div class="testimonial">
+      <p>"This service was beyond excellent! Highly recommended!"</p>
+      <h4>- Alex Johnson</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Professional, fast, and reliable. I'm very satisfied!"</p>
+      <h4>- Jamie Lee</h4>
+    </div>
+    <div class="testimonial">
+      <p>"One of the best experiences I’ve had. Truly outstanding work."</p>
+      <h4>- Casey Brown</h4>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <footer>
+    © 2025 SkillLink, Inc. All rights reserved.
+  </footer>
+
+   
+   <script src="script.js"></script>
+
+  
+</body>
+</html>
